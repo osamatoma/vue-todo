@@ -1,0 +1,27 @@
+@import bootstrap
+@import font-awesome
+v-cloak
+    display: none
+.tabs 
+    margin-top: 15px
+.todo-items-container
+    margin-top: 15px
+    padding: 0
+    .todo-item
+        display: block
+        font-size: 27px
+        margin-bottom: 10px
+        .icons
+            float: right
+            .delete, .complete,.undo
+                cursor: pointer
+            .delete
+                color: red
+            .complete
+                color: #3c763d
+                
+        &::after
+            content: ''
+            display: block
+            height: 3px
+            background: #ccc
